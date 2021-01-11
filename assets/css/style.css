@@ -6,6 +6,10 @@
     background-color: #676767;
 }
 
+.bg-color-three-reasons{
+    background-color: #fff;
+}
+
 .ui-menu-color-home {
     background-color: #f02415;
 }
@@ -109,12 +113,32 @@ header {
     letter-spacing: 2px;
 }
 
+.section-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
+
+/* ----------------------------------------General */
+.row-table{
+    display: table;
+}
+
+.section-column{
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+
+}
+
 
 /* ----------------------------------------Footer */
 
@@ -166,4 +190,16 @@ footer {
 
 #footer-details{
     padding: 20px;
+}
+
+
+/*--------------------------------------------Heading*/
+
+.three-reasons-icon{
+    font-size: 26px;
+    color: #f02415;
+}
+
+.three-reasons-heading{
+    margin-bottom: 15px;
 }
