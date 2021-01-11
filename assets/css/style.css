@@ -34,13 +34,14 @@ header {
 
 .logo {
     background: url("../images/conor-img.png");
+    background-color: #676767;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    transition: all .75s ease-in-out;
+    -moz-transition: all .75s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
 }
 
 .name {
@@ -161,4 +162,8 @@ footer {
 
 .social-links li a i:hover {
     background-color:#e84610 ;
+}
+
+#footer-details{
+    padding: 20px;
 }
