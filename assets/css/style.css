@@ -316,3 +316,46 @@ footer {
     content:"";
     background: #fafafa;
 }
+
+/*--------------------------------------------Contact from*/
+
+.contact-heading{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+}
+
+.center-form{
+    margin: 0 auto;
+    padding-top: 15px;
+    max-width: 70%;
+}
+
+input[type="text"]{
+    margin-bottom: 5px;
+}
+
+input[type="email"]{
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/*--------------------------------------------Media Query*/
+
+@media(min-width:992px) {
+    .center-form{
+         min-height: 260px;
+         padding-top: 35px;
+         margin: 0 auto;
+         padding-top: 15px;
+         max-width: 50%;
+        }
+}
+
