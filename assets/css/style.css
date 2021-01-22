@@ -136,6 +136,16 @@ header {
     height: 120px;
 }
 
+input:hover {
+    box-shadow: 0 0 4px rgb(49, 46, 46);
+    border: 1px solid rgb(12, 9, 9)
+}
+
+textarea:hover {
+    box-shadow: 0 0 4px rgb(49, 46, 46);
+    border: 1px solid rgb(12, 9, 9)
+}
+
 /* ----------------------------------------General */
 .row-table{
     display: table;
