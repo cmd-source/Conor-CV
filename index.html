@@ -61,6 +61,7 @@
                         </h3>
                     </div>
                 </div>
+                
                 <div class="personal-info-item">
                     <div class="key">
                         <p class="uppercase">
@@ -124,6 +125,8 @@
                         </p>
                     </div>
                 </div>
+                <div id="map"></div>
+            
             </div>
             <div class="col-md-8 bg-color-three-reasons section-column">
                 <div class="row">
@@ -169,7 +172,6 @@
             </div>
         </div>
     </section>
-
 
     <footer class="container-fluid">
         <div class="row" id="footer-details">
@@ -223,6 +225,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                    center: { lat: -28.024, lng: 140.887 },
+                        });
+                     }
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3u8AlQgl8rlggicD_vhMpcNhJKK9-ZWE&callback=initMap"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 </body>
 
 </html>
