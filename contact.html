@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_07uO4zkbIVQPC1MaqHzAw");
+            emailjs.send(gmail, template_7qtjd0s,{name: "Conor", notes: "The project that I want is..."});
+        })();
+    </script>
     <title>Conor Crosbie CV</title>
 </head>
 
@@ -43,7 +50,7 @@
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
                                 <a href="assets/cv/cvconor.pdf" class="hvr-sweep-to-bottom"><i class="fa fa-download"
-                                        aria-hidden="true" ></i><span>Download CV</span></a>
+                                        aria-hidden="true"></i><span>Download CV</span></a>
                             </li>
                         </ul>
                     </div>
@@ -60,18 +67,19 @@
                     <h5 class="uppercase text-center">Lets work together!</h5>
 
                     <div class="center-form">
-                    <form>
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
-                            required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
-                            placeholder="Project Summary" required></textarea>
-                        <div class="text-center form-row">
-                        <div class="col">
-                            <button type="submit" class="btn btn-secondary">Send Project Request</button>
-                        </div>
-                        </div>
-                    </form>
+                        <form>
+                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name"
+                                required />
+                            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
+                                required />
+                            <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
+                                placeholder="Project Summary" required></textarea>
+                            <div class="text-center form-row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
