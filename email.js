@@ -10,6 +10,8 @@ function sendMail(contactForm) {
         },
         function(error) {
             console.log("failed", error);
-        })
+        }
+    );
+    return false;
 }
-console.log("hello")
+
