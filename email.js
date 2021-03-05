@@ -13,4 +13,6 @@ function sendMail(contactForm) {
             }
         );
     return false;
+
+    alert("Thanks foryour email, I'll be in touch")
 }
