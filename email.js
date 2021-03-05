@@ -12,7 +12,12 @@ function sendMail(contactForm) {
                 console.log("failed", error);
             }
         );
+    alert("Well get back to you shortly")
     return false;
-
-    alert("Thanks foryour email, I'll be in touch")
 }
+
+document.getElementById("sub").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        sendMail(contactForm);
+    }
+})
