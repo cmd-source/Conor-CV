@@ -14,4 +14,3 @@ function sendMail(contactForm) {
         );
     
 }
-console.log("hello");
