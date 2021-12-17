@@ -220,7 +220,22 @@ footer {
 
 .three-reasons-icon{
     font-size: 26px;
-    color: #f02415;
+}
+
+.dumbbell {
+    color:#525252;
+}
+
+.globe {
+    color: blue;
+}
+
+.utensils{
+    color:red;
+}
+
+.bitcoin {
+    color:orange;
 }
 
 .three-reasons-heading{
