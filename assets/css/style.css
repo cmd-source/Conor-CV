@@ -153,6 +153,10 @@ textarea:hover {
     border: 1px solid rgb(12, 9, 9)
 }
 
+.style:hover {
+    box-shadow: 0 0 4px rgb(49, 46, 46);
+}
+
 /* ----------------------------------------General */
 .row-table{
     display: table;
@@ -168,6 +172,19 @@ textarea:hover {
 .uppercase{
     text-transform:uppercase;
 }
+
+#ms-link-1, #ms-link-2, #ms-link-3, #ms-link-4 {
+    text-decoration: none;
+}
+
+.ms-link {
+    text-decoration: none;
+}
+
+.style {
+    border: 1px solid rgb(12, 9, 9)
+}
+
 
 
 /* ----------------------------------------Footer */
