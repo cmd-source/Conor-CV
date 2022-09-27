@@ -194,6 +194,15 @@ textarea:hover {
     border: 1px solid rgb(12, 9, 9)
 }
 
+.gallary-img {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+    width: 95%;
+    height: 350px;
+}
+
 
 
 /* ----------------------------------------Footer */
