@@ -147,11 +147,11 @@ header {
 
 @media(max-width:500px) {
     .dashboard-img {
-         height: 120px;
+         height: 220px;
          padding-top: 35px;
          margin: 0 auto;
          padding-top: 15px;
-         width: 220px;
+         width: 340px;
         }
 }
 
