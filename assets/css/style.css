@@ -140,6 +140,21 @@ header {
     margin-bottom: 40px;
 }
 
+.dashboard-img {
+    width: 600px;
+    height: 320px;
+}
+
+@media(max-width:500px) {
+    .dashboard-img {
+         height: 220px;
+         padding-top: 35px;
+         margin: 0 auto;
+         padding-top: 15px;
+         width: 400px;
+        }
+}
+
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
@@ -200,7 +215,7 @@ textarea:hover {
     margin-left: 5px;
     border: 1px solid black;
     width: 95%;
-    height: 350px;
+    height: 320px;
 }
 
 
