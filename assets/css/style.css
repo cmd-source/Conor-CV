@@ -137,23 +137,45 @@ header {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+#code-head {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-head {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dashboard-img {
-    width: 600px;
-    height: 320px;
+    width: 900px;
+    height: 475px;
 }
 
-@media(max-width:500px) {
+
+@media(max-width:1500px) {
     .dashboard-img {
-         height: 220px;
+         height: 450px;
          padding-top: 35px;
          margin: 0 auto;
-         padding-top: 15px;
-         width: 340px;
+         padding-top: 5px;
+         width: 680px;
         }
 }
+
+@media(max-width:1150px) {
+    .dashboard-img {
+         height: 180px;
+         margin-left: auto;
+         margin-right: auto;
+         padding-top: 5px;
+         width: 270px;
+        }
+}
+
 
 /*--------------------------------------------Hover.css*/
 
