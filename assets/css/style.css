@@ -62,23 +62,23 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 250px;
+    height: 500px;
     transition: all .75s ease-in-out;
     -moz-transition: all .75s ease-in-out;
     -webkit-transition: all .75s ease-in-out;
 }
 
 .name {
-    font-weight: 350;
-    font-size: 46px;
+    font-weight: 400;
+    font-size: 48px;
     margin-top: 50px;
     color:#fff;
 }
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-weight: 350;
-    font-size: 32px;
+    font-weight: 400;
+    font-size: 36px;
     margin-top: 50px;
     margin-bottom: 20px;
     color: #fff;
@@ -87,7 +87,7 @@ header {
 .sub {
     font-family: "Roboto", sans-serif;
     font-weight: 350;
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 10px;
     color: black;
 }
