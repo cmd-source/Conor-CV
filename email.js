@@ -1,5 +1,5 @@
 function sendMail(contactForm) {
-    emailjs.send("service_9pkej9d","conor", {
+    emailjs.send("service_xup6ame","conor", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "project_request": contactForm.projectsummary.value
@@ -12,7 +12,9 @@ function sendMail(contactForm) {
                 console.log("failed", error);
             }
         );
-    alert("Well get back to you shortly")
+    alert("Thanks for your email, well get back to you shortly")
+    window.location.href = 'http://www.powerevolutionpro.com'; // Replace with your homepage URL
+
     return false;
 }
 
