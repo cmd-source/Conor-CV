@@ -6,7 +6,7 @@
     background-image: url('../images/b.png'); /* Path to your image */
     background-size: cover; /* This will make sure your image covers the whole element */
     background-repeat: no-repeat; /* This will prevent the image from repeating */
-    height: 450px; /* Set the height of your element */
+    height: 215px; /* Set the height of your element */
     width: 100%; /* Set the width of your element */
 }
 
@@ -53,7 +53,7 @@ header {
 }
 
 .heading {
-    margin-left: 50px;
+    margin-left: 5px;
 }
 
 .logo {
@@ -62,8 +62,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 350px;
-    max-height: 450px;
+    min-height: 250px;
+    max-height: 327px;
     transition: all .75s ease-in-out;
     -moz-transition: all .75s ease-in-out;
     -webkit-transition: all .75s ease-in-out;
@@ -72,7 +72,6 @@ header {
 .name {
     font-weight: 400;
     font-size: 48px;
-    margin-top: 50px;
     color:#fff;
 }
 
@@ -80,8 +79,8 @@ header {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 36px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 40px;
     color: #fff;
 }
 
@@ -111,7 +110,7 @@ header {
 }
 
 .menuitem {
-    height: 120px;
+    height: 90px;
     text-align: center;
     padding: 0;
 }
@@ -161,13 +160,13 @@ header {
 
 .dashboard-img {
     width: 900px;
-    height: 475px;
+    height: 425px;
 }
 
 
 @media(max-width:1500px) {
     .dashboard-img {
-         height: 450px;
+         height: 405px;
          padding-top: 35px;
          margin: 0 auto;
          padding-top: 5px;
@@ -177,11 +176,11 @@ header {
 
 @media(max-width:1150px) {
     .dashboard-img {
-         height: 180px;
+         height: 195px;
          margin-left: auto;
          margin-right: auto;
          padding-top: 5px;
-         width: 270px;
+         width: 315px;
         }
 }
 
@@ -190,7 +189,7 @@ header {
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
-    height: 120px;
+    height: 90px;
 }
 
 input:hover {
@@ -330,6 +329,11 @@ footer {
     margin-bottom: 15px;
 }
 
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
 
 /* ----------------------------------------Personal INFO */
 
@@ -351,7 +355,7 @@ footer {
 }
 
 .personal-info-item .key{
-    width: 30%;
+    width: 20%;
     margin-right: 21px;
     padding-bottom: 2px;
     vertical-align: top;
@@ -363,7 +367,7 @@ footer {
 
 .personal-info-item .value{
     position:relative;
-    width: 60%;
+    width: 80%;
 }
 
 
