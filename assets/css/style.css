@@ -57,7 +57,7 @@ header {
 }
 
 .logo {
-    background: url("../images/conor-img.png");
+    background: url("../images/logo\ \(2\).png");
     background-color: #676767;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@ header {
 }
 
 .name {
-    font-weight: 300;
+    font-weight: 350;
     font-size: 46px;
     margin-top: 50px;
     color:#fff;
@@ -77,8 +77,8 @@ header {
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-weight: 250;
-    font-size: 28px;
+    font-weight: 350;
+    font-size: 32px;
     margin-top: 50px;
     margin-bottom: 20px;
     color: #fff;
@@ -86,8 +86,8 @@ header {
 
 .sub {
     font-family: "Roboto", sans-serif;
-    font-weight: 250;
-    font-size: 28px;
+    font-weight: 350;
+    font-size: 32px;
     margin-top: 10px;
     color: black;
 }
