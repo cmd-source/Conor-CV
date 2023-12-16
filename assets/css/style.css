@@ -62,7 +62,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    min-height: 350px;
+    max-height: 450px;
     transition: all .75s ease-in-out;
     -moz-transition: all .75s ease-in-out;
     -webkit-transition: all .75s ease-in-out;
