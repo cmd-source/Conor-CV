@@ -6,7 +6,7 @@
     background-image: url('../images/b.png'); /* Path to your image */
     background-size: cover; /* This will make sure your image covers the whole element */
     background-repeat: no-repeat; /* This will prevent the image from repeating */
-    height: 500px; /* Set the height of your element */
+    height: 450px; /* Set the height of your element */
     width: 100%; /* Set the width of your element */
 }
 
