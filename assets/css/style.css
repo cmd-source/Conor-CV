@@ -251,12 +251,22 @@ textarea:hover {
     border: 1px solid rgb(12, 9, 9)
 }
 
+@media(max-width:350px) {
+    .gallary-img {
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+        border: 1px solid black;
+        width: 75%;
+        height: 180px;
+    }
+}
 .gallary-img {
     margin-top: 10px;
     margin-right: 5px;
     margin-left: 5px;
     border: 1px solid black;
-    width: 95%;
+    width: 98%;
     height: 280px;
 }
 
