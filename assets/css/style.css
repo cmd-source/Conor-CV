@@ -69,15 +69,15 @@ header {
 }
 
 .name {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 46px;
     margin-top: 50px;
-    color: black;
+    color:#fff;
 }
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-weight: 250;
     font-size: 28px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -86,10 +86,10 @@ header {
 
 .sub {
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-weight: 250;
     font-size: 28px;
     margin-top: 10px;
-    color: #fff;
+    color: black;
 }
 
 .list-inline-item:not(:last-child) {
