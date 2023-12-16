@@ -19,11 +19,11 @@
 }
 
 .ui-menu-color-home {
-    background-color: #f02415;
+    background-color:#0047AB;
 }
 
 .ui-menu-color-resume {
-    background-color: #9b59b6;
+    background-color:#000080;
 }
 
 .bg-color-workhistory-info{
@@ -35,7 +35,7 @@
 }
 
 .ui-menu-color-contact {
-    background-color: #3498db;
+    background-color: #00A36C;
 }
 
 .ui-menu-color-download {
@@ -57,7 +57,7 @@ header {
 }
 
 .logo {
-    background: url("../images/logo\ \(2\).png");
+    background: url("../images/P.png");
     background-color: #676767;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,14 +163,26 @@ header {
     height: 425px;
 }
 
+@media (max-width: 950px) {
+    .icon-img {
+        height: 225px;
+        padding-top: 5px; /* Removed the duplicate padding-top property */
+        margin: 0 auto; /* Centers the element horizontally */
+        width: 80%;
+        background-color: black; /* Set your desired background color */
+        /* Removed the background-image property as it's not needed */
+    }
+}
 
-@media(max-width:1500px) {
-    .dashboard-img {
-         height: 405px;
+@media(max-width:330px) {
+    .myBackground {
+         height: 175px;
          padding-top: 35px;
          margin: 0 auto;
          padding-top: 5px;
-         width: 680px;
+         width: 100%;
+         background-image: none; /* This will hide the background image */
+         background-color: black; 
         }
 }
 
