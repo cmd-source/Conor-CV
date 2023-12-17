@@ -51,6 +51,17 @@
           padding: 15px;
           text-align: center;
         }
+
+        @media screen and (max-width: 850px) {
+        .gallery-row {
+            flex-direction: column; /* Stacks gallery items vertically */
+            align-items: stretch; /* Stretches gallery items to full width */
+        }
+
+        div.gallery {
+            width: auto; /* Allows gallery to take full width of the container */
+        }
+    }
         </style>
     <title>Power Evolution</title>
 </head>
@@ -59,7 +70,7 @@
     <header>
         <div class="row no-gutters">
             
-            <a class="col-md-4 logo" href="02-index.html"></a>
+            <a class="col-md-4 logo" href="index.html"></a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title myBackground">
                     <div class="col heading">
@@ -70,8 +81,7 @@
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem">
-                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home"
-                                        aria-hidden="true"></i><span>Home</span></a>
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fas fa-user-astronaut"></i></i><span>Services</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
                                 <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fas fa-code"></i><span>Technology</span></a>
@@ -81,7 +91,7 @@
                                         aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-travel menuitem">
-                                <a href="travels.html" class="hvr-sweep-to-bottom"><i class="fas fa-images"></i></i><span>Products</span></a>
+                                <a href="travels.html" class="hvr-sweep-to-bottom"><i class="fas fa-images"></i></i><span>Gallery</span></a>
                             </li>
                         </ul>
                     </div>
@@ -118,7 +128,7 @@
                 <div class="col-md-8 bg-color-three-reasons section-column">
                     <h5 class=" mt-5 section-heading uppercase text-center"  id="code-sub">Building better and more cost efficent business operations</h5>
                     <div class="gallery-row"> <!-- Changed to gallery-row for clarity -->
-                        <div class="gallery mt-5">
+                        <div class="gallery ">
                             <a target="_blank" href="assets/D.pdf">
                                 <img src="assets/images/app.png" alt="Business application" width="600" height="400">
                             </a>
