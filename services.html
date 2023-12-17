@@ -14,25 +14,56 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: none;
+          width: 380px;
+        }
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_07uO4zkbIVQPC1MaqHzAw");
-        })();
-    </script>
-    <title>Conor Crosbie CV</title>
+        .gallery-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery {
+            margin: 10px; /* Adjusts space around each image */
+            text-align: center; /* Centers the description text */
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        </style>
+    <title>Power Evolution</title>
 </head>
 
 <body>
     <header>
         <div class="row no-gutters">
+            
             <a class="col-md-4 logo" href="02-index.html"></a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title myBackground">
-                    <div class="col heading ">
-                        <h1 class="name text-center">Power Evolution</h1>
-                    
+                    <div class="col heading">
+                        <h1 class="name text-center">Power Evolution Pro</h1>
                     </div>
                 </div>
                 <div class="row no-gutters">
@@ -49,9 +80,8 @@
                                 <a href="contact.html" class="hvr-sweep-to-bottom"><i class="far fa-comments"
                                         aria-hidden="true"></i><span>Contact</span></a>
                             </li>
-                          
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-travel menuitem">
-                                <a href="travels.html" class="hvr-sweep-to-bottom"><i class="fas fa-images"></i></i></i><span>Products</span></a>
+                                <a href="travels.html" class="hvr-sweep-to-bottom"><i class="fas fa-images"></i></i><span>Products</span></a>
                             </li>
                         </ul>
                     </div>
@@ -63,66 +93,54 @@
 
         <section class="container-fluid">
             <div class="row bg-color-contact">
-                <div class="col">
-                    <h3 class="contact-heading uppercase text-center">Products & Services</h3>
-            
-
-                        <div id="gallary-container" class="container">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Closing Dashboard.png" alt="gym workout">
-                                    </div>
-
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Screenshot 2023-05-08 155935.png" alt="gym workout">
-                                    </div>
-
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Financial Dashboard.JPG" alt="gym workout">
-                                    </div>
-
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Auto Dashboard.JPG" alt="gym workout">
-                                    </div>
-                                </div>
-                    
-                                <div class="col-lg-4">
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/pikdemo.png" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Outstanding Items.JPG" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Counterpart Dashboard.png" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Screenshot 2023-05-08 161811.png" alt="gym workout">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/pikdemo.png" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Outstanding Items.JPG" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Counterpart Dashboard.png" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Screenshot 2023-05-08 161811.png" alt="gym workout">
-                                    </div>
-
-                                </div>
-                            </div>
+                <div class="col-md-4 bg-color-personal-info section-column border">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="mt-3">
+                                Services
+                            </h2>
+                            <h4 class="mt-2">We believe that we can take your current business operations and make it leaner, more robust with cost efficiencies and better business synergies.</h4>
+                            <h5 class="mt-2">
+                                Many business operations are still inefficient, relying on Excel spreadsheets for tracking and management. They often sit on vast amounts of unused data that could offer valuable insights, and engage in manual, mundane tasks that slow down their operations. We aim to transform all of this.
+                            </h5>
+                            <h5>
+                            To achieve this, we begin by understanding your business, the industry it operates in, and the data you work with. Utilizing the Power Platform, we can deploy rapid and robust business solutions. If necessary, we can also leverage additional technology stacks for greater customization.
+                            </h5>
                         </div>
+                    </div>
+    
+                  
+                  
+    
                 </div>
 
-            </div>
+                
+                <div class="col-md-8 bg-color-three-reasons section-column">
+                    <h5 class=" mt-5 section-heading uppercase text-center"  id="code-sub">Building better and more cost efficent business operations</h5>
+                    <div class="gallery-row"> <!-- Changed to gallery-row for clarity -->
+                        <div class="gallery mt-5">
+                            <a target="_blank" href="assets/D.pdf">
+                                <img src="assets/images/app.png" alt="Business application" width="600" height="400">
+                            </a>
+                            <div class="desc">Business applications and dashboards</div>
+                        </div>
+                        
+                        <div class="gallery">
+                            <a target="_blank" href="assets/P.pdf">
+                                <img src="assets/images/AIlogo.png" alt="AI" width="600" height="400">
+                            </a>
+                            <div class="desc">AI in your business</div>
+                        </div>
+                        
+                        <div class="gallery">
+                            <a target="_blank" href="img_northern_lights.jpg">
+                                <img src="assets/images/auto.png" alt="Automation" width="600" height="400">
+                            </a>
+                            <div class="desc">Automation in your business</div>
+                        </div>
+                    </div>
+                </div>
+            
         </section>
 
     </section>
@@ -171,7 +189,6 @@
             </div>
         </div>
     </footer>
-    <script src="email.js"></script>
 </body>
 
 </html>
