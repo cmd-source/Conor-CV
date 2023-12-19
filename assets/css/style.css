@@ -10,6 +10,19 @@
     width: 100%; /* Set the width of your element */
 }
 
+
+
+@media (max-width: 550px) {
+    .ivideo {
+        height: 260px;
+        padding-top: 5px; /* Removed the duplicate padding-top property */
+        margin: 0 auto; /* Centers the element horizontally */
+        width: 100%;
+        background-color: white; /* Set your desired background color */
+        /* Removed the background-image property as it's not needed */
+    }
+}
+
 .bg-color-name-title {
     background-color: #676767;
 }
@@ -270,6 +283,46 @@ textarea:hover {
     border: 1px solid rgb(12, 9, 9)
 }
 
+/*-------------------------------------------Gallery */
+
+.gallery-item {
+    position: relative; /* Required for absolute positioning of children */
+    margin-bottom: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes bottom space */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns top and bottom */
+    padding: 10px; /* Padding inside the overlay */
+    color: white; /* Text color */
+    background: rgba(0, 0, 0, 0.05); /* Semi-transparent background */
+}
+
+.image-name {
+    margin: 0;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.image-description {
+    margin: 0;
+    font-style: italic;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .gallary-img {
     margin-top: 10px;
     margin-right: 2px;
@@ -277,6 +330,47 @@ textarea:hover {
     border: 1px solid black;
     width: 100%;
     height: 230px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+}
+
+.bounce {
+    animation: bounce 0.3s; /* Adjust time as needed */
+}
+
+
+.fullscreen {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    z-index: 1000; /* Ensures it's above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    animation: bounceIn 0.5s; /* Bounce animation on open */
+}
+
+.fullscreen img {
+    max-width: 90%; /* Limit image width */
+    max-height: 90%; /* Limit image height */
+    object-fit: contain;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }
 
 @media(max-width:350px) {

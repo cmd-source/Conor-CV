@@ -66,54 +66,86 @@
                     <h3 class="contact-heading uppercase text-center">Gallery</h3>
             
 
-                        <div id="gallary-container" class="container">
-                            <div class="row ">
-                                <div class="col-lg-4">
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Closing Dashboard.png" alt="gym workout">
-                                    </div>
+                       
 
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Screenshot 2023-05-08 155935.png" alt="gym workout">
-                                    </div>
+<div id="gallery-container" class="container">
+    <div class="row">
+        <!-- Column 1 -->
+        <div class="col-lg-4">
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/dash.JPG" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Dashboard</p>
+                    <p class="image-description text-center">Provides an overview on items by category, rank and importance</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/gallery.JPG" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Record Selection</p>
+                    <p class="image-description text-center">Allows for advanced searches on records, to expand their details </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/days.JPG" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">General Info</p>
+                    <p class="image-description text-center">Pop up charts allow to drill into specfic details</p>
+                </div>
+            </div>
+        </div>
 
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Financial Dashboard.JPG" alt="gym workout">
-                                    </div>
+        <!-- Column 2 -->
+        <div class="col-lg-4">
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/pikdemo.png" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Dashboard</p>
+                    <p class="image-description text-center">Provides an overview on items by category, rank and importance</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Outstanding Items.JPG" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Record Selection</p>
+                    <p class="image-description text-center">Allows for advanced searches on records, to expand their details</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Screenshot 2023-05-08 155935.png" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Midlevel Metrics</p>
+                    <p class="image-description text-center">Drilling one level down from the main dashboard</p>
+                </div>
+            </div>
+        </div>
 
-                                
-                                </div>
-                    
-                                <div class="col-lg-4">
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/pikdemo.png" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Outstanding Items.JPG" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Counterpart Dashboard.png" alt="gym workout">
-                                    </div>
-                                 
-
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/backgd.png" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Screenshot 2023-05-08 161811.png" alt="gym workout">
-                                    </div>
-                                    <div>
-                                        <img class="gallary-img" src="assets/images/Auto Dashboard.JPG" alt="gym workout">
-                                    </div>
-                               
-
-                                </div>
-                            
-                            </div>
-                        </div>
+        <!-- Column 3 -->
+        <div class="col-lg-4">
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Counterpart Dashboard.png" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Dynamic Dashboard</p>
+                    <p class="image-description text-center">Where all information on screen is related and by where selecting one metric highlights the related metrics</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Financial Dashboard.JPG" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Financial Dynamic Dashboard</p>
+                    <p class="image-description text-center">Allows the analyst to drill into the granular details of their financial information</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Auto Dashboard.JPG" alt="gym workout">
+                <div class="overlay">
+                    <p class="image-name text-center">Auto Dashboard</p>
+                    <p class="image-description text-center">Allows the manager to manage manufacturing supply parts, sales and invoices</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
 
             </div>
@@ -166,6 +198,27 @@
         </div>
     </footer>
     <script src="email.js"></script>
+    <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.add('bounce');
+                setTimeout(() => item.classList.remove('bounce'), 300); // Adjust time as needed
+            });
+        });
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+            const clone = item.cloneNode(true); // Clone the item
+        clone.classList.add('fullscreen'); // Add fullscreen class
+        document.body.appendChild(clone); // Append to body
+
+        // Add click event to exit fullscreen
+        clone.addEventListener('click', () => {
+            clone.remove();
+        });
+    });
+});
+    </script>
 </body>
 
 </html>
