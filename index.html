@@ -138,6 +138,18 @@
                         </p>
                         <div class="text-center mt-3">
                        <img src="assets/images/icon.jpg" class="icon-img center" alt="">
+                       
+                       
+                        
+                        <img id="bot-icon" src="assets/images/icons8-bot.gif" style="cursor: pointer; position: fixed; bottom: 10px; right: 10px; z-index: 1002;">
+
+                        <div id="chatbot-container">
+                            <span id="chatbot-close" style="cursor: pointer;">&times;</span>
+                            <iframe id="chatbot-iframe" src="https://web.powerva.microsoft.com/environments/02f22cf2-3d7f-e588-ba0f-48abf5ca8f88/bots/cr573_copilot1/webchat?__version__=2"></iframe>
+                        </div>
+                       
+                        
+                    
                         </div>
                     </div>
                 </div>
@@ -218,6 +230,30 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3u8AlQgl8rlggicD_vhMpcNhJKK9-ZWE&callback=initMap"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('chatbot-container').style.display = 'none';
+
+    document.getElementById('bot-icon').addEventListener('click', function() {
+        var chatbotContainer = document.getElementById('chatbot-container');
+        if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+            chatbotContainer.style.display = 'block';
+        } else {
+            chatbotContainer.style.display = 'none';
+        }
+    });
+
+    document.getElementById('chatbot-close').addEventListener('click', function() {
+        document.getElementById('chatbot-container').style.display = 'none';
+    });
+});
+
+        
+    </script>
+ 
+
     <script src="maps.js"></script>
 </body>
 
