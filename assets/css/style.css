@@ -685,13 +685,12 @@ div#map {min-height: 360px;}
 
 #chatbot-close {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    color: black;
+    top: 3px;
+    right: 20px;
+    font-size: 33px; /* Adjust this value as needed */
+    color: white;
     z-index: 1001;
 }
-
 @media (max-width: 600px) {
     #chatbot-container {
         width: 100%;
