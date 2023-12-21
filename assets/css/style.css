@@ -89,9 +89,10 @@ header {
 }
 
 .name {
-    font-weight: 400;
-    font-size: 48px;
-    color:#fff;
+    font-weight: 550;
+    font-size: 50px;
+    color:#02d18c;
+    background-color: rgba(0, 0, 0, 0.23);
 }
 
 #moto {
@@ -476,6 +477,7 @@ footer {
 
 .personal-info-item {
     margin-bottom: 30px;
+    margin-left: 20px;
     display: block;
     clear: both;
 }
