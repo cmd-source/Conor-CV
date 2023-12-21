@@ -89,10 +89,11 @@ header {
 }
 
 .name {
-    font-weight: 550;
+    font-weight: 500;
     font-size: 50px;
     color:#02d18c;
     background-color: rgba(0, 0, 0, 0.23);
+    font-style:normal;
 }
 
 #moto {
