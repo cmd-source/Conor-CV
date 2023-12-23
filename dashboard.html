@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="assets/images/LPLogo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,62 +14,19 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        div.gallery {
-          margin: 5px;
-          border: 1px solid #ccc;
-          float: none;
-          width: 380px;
-        }
-
-        .gallery-container {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
-        .gallery-row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .gallery {
-            margin: 10px; /* Adjusts space around each image */
-            text-align: center; /* Centers the description text */
-        }
-        
-        div.gallery:hover {
-          border: 1px solid #777;
-        }
-        
-        div.gallery img {
-          width: 100%;
-          height: auto;
-        }
-        
-        div.desc {
-          padding: 15px;
-          text-align: center;
-        }
-
-        @media screen and (max-width: 850px) {
-        .gallery-row {
-            flex-direction: column; /* Stacks gallery items vertically */
-            align-items: stretch; /* Stretches gallery items to full width */
-        }
-
-        div.gallery {
-            width: auto; /* Allows gallery to take full width of the container */
-        }
-    }
-        </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("frlRDOZgwOG1boi3y");
+        })();
+    </script>
     <title>Power Evolution powerplatform solutions</title>
 </head>
 
 <body>
     <header>
         <div class="row no-gutters">
-            
             <a class="col-md-4 logo" href="index.html"></a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title myBackground">
@@ -113,68 +69,29 @@
 
         <section class="container-fluid">
             <div class="row bg-color-contact">
-                <div class="col-md-4 bg-color-personal-info section-column border">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="mt-3">
-                                Services
-                            </h2>
-                            <h4 class="mt-2">We believe that we can take your current business operations and make it leaner, more robust with cost efficiencies and better business synergies.</h4>
-                            <h5 class="mt-2">
-                                Many business operations are still inefficient, relying on Excel spreadsheets for tracking and management. They often sit on vast amounts of unused data that could offer valuable insights, and engage in manual, mundane tasks that slow down their operations. We aim to transform all of this.
-                            </h5>
-                            <h5>
-                            To achieve this, we begin by understanding your business, the industry it operates in, and the data you work with. Utilizing the Power Platform, we can deploy rapid and robust business solutions. If necessary, we can also leverage additional technology stacks for greater customization.
-                            </h5>
-                        </div>
-                    </div>
-    
-                  
-                  
-    
+                <div class="col">
+                    
+                    <iframe title="Demo" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=bbf3a7e8-b9ad-430b-bbea-d8ca56086076&autoAuth=true&ctid=e3c13f08-ff87-4168-9872-d27968abe387" frameborder="0" allowFullScreen="true"></iframe>
+                    
                 </div>
-
-                
-                <div class="col-md-8 bg-color-three-reasons section-column">
-                    <h5 class=" mt-5 section-heading uppercase text-center"  id="code-sub">Building better and more cost efficent business operations</h5>
-                    <div class="gallery-row"> <!-- Changed to gallery-row for clarity -->
-                        <div class="gallery ">
-                            <a target="_blank" href="assets/Applications&Dashboards.pdf">
-                                <img src="assets/images/app.png" alt="Business application" width="600" height="400">
-                            </a>
-                            <div class="desc">Business applications and dashboards</div>
-                        </div>
-                        
-                        <div class="gallery">
-                            <a target="_blank" href="assets/AI.pdf">
-                                <img src="assets/images/AIlogo.png" alt="AI" width="600" height="400">
-                            </a>
-                            <div class="desc">AI in your business</div>
-                        </div>
-                        
-                        <div class="gallery">
-                            <a target="_blank" href="assets/Automate.pdf">
-                                <img src="assets/images/auto.png" alt="Automation" width="600" height="400">
-                            </a>
-                            <div class="desc">Automation in your business</div>
-                        </div>
-                    </div>
-                </div>
-            
-        </section>
-
-    </section>
-    <footer class="container-fluid">
-        <div class="row" id="footer-details">
-                <!---
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub"></h5>
-                <p class="inline-block">
-                 
-                </p>
             </div>
+        </section>
+        <img id="bot-icon" src="assets/images/icons8-bot.gif" style="cursor: pointer; position: fixed; bottom: 10px; right: 10px; z-index: 1002;">
+
+        <div id="chatbot-container">
+            <span id="chatbot-close" style="cursor: pointer;">&times;</span>
+            <iframe id="chatbot-iframe" src="https://web.powerva.microsoft.com/environments/b25060f7-e0ab-e41f-82af-e16bbd151596/bots/crebb_powerEvolutionCoPilot/canvas?__version__=2"></iframe>
+        </div>
+    </section>
+    <footer class="container-fluid mt-5">
+        <div class="row" id="footer-details">
+             <!---
             <div class="col-sm-4">
-                
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    
+                   
+                </p>
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Social</h5>
@@ -202,8 +119,8 @@
             </div>
         -->
         </div>
-    
     </footer>
+    <script src="email.js"></script>
 </body>
 
 </html>
