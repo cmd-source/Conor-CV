@@ -66,6 +66,14 @@
         </div>
     </header>
     <section>
+        <div id="popup" class="popup">
+            <div class="popup-content text-center">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p>This is a quick interactive demonstration to highlight the value the power platform can offer.</p>
+                <img src="assets/images/fastlane.png" width="275" height="70">  
+                <p class="mt-2">Fastlane is a fictional business, users and interact with the sales data, move between pages, download reports and have a conversation with the AI Powered Copilot to query information about the business.</p>
+            </div>
+        </div>
 
         <section class="container-fluid">
             <div class="row bg-color-contact">
@@ -143,8 +151,17 @@
                         });
                     });
                     
-                            
+                    function closePopup() {
+                            document.getElementById('popup').style.display = 'none';
+                        }
+
+                    window.onload = function() {
+                        document.getElementById('popup').style.display = 'block';
+                    };
+
                         </script>
+
+                        
     <script src="email.js"></script>
 </body>
 

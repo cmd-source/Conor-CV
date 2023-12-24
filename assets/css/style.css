@@ -717,3 +717,36 @@ div#map {min-height: 360px;}
 #bot-icon:hover {
     transform: scale(1.1); /* Slightly enlarge icon on hover */
 }
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(206, 152, 15);
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
